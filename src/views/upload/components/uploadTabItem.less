@@ -1,0 +1,42 @@
+.upload-panel {
+  background: #fff;
+}
+.left-card {
+  min-height: 590px;
+  max-height: 810px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: 5px 0px 8px rgba(129, 147, 177, 0.06);
+  .project-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(129, 147, 177, 0.5);
+    color: rgba(129, 147, 177, 0.5);
+    height: 36px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    &.active {
+      color: #fff;
+      background: #1CC2FD;
+      border: none;
+    }
+  }
+}
+.upload-opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  .no {
+    color: #031F47;
+    font-size: 12px;
+    span {
+      color: #1CC2FD;
+    }
+  }
+}

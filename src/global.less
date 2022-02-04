@@ -1,0 +1,232 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+html,
+body,
+#app,
+#root {
+  height: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: #D6DFEC !important;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// 数据列表 样式
+.table-alert {
+  margin-bottom: 16px;
+}
+
+// 数据列表 操作
+.table-operator {
+  margin-bottom: 18px;
+
+  button {
+    margin-right: 8px;
+  }
+}
+
+// 数据列表 搜索条件
+.table-page-search-wrapper {
+  .ant-form-inline {
+    .ant-form-item {
+      display: flex;
+      margin-bottom: 24px;
+      margin-right: 0;
+
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      >.ant-form-item-label {
+        line-height: 32px;
+        padding-right: 8px;
+        width: auto;
+      }
+
+      .ant-form-item-control {
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .table-page-search-submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+// 数据列表 搜索条件
+.form-wrapper {
+  .ant-form-inline {
+    .ant-form-item {
+      display: flex;
+      margin-bottom: 15px;
+      margin-right: 0;
+
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 全局滚动条样式
+::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+  background: #F6F9FC;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(214, 223, 236);
+  transition: all .2s;
+  border-radius: .5rem;
+
+  &:hover {
+    background-color: #ABB8CE;
+  }
+}
+
+// [a-tabs] 样式覆盖
+.ant-tabs.ant-tabs-card {
+  >.ant-tabs-bar {
+    margin-bottom: 0;
+    border: none;
+
+    .ant-tabs-tab {
+      min-width: 80px;
+      background: #E5EBF3;
+      font-size: 14px;
+      font-weight: 400;
+      color: #8193B1;
+      text-align: center;
+      border: none !important;
+      margin-right: 0 !important;
+
+      &.ant-tabs-tab-active {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0F121B;
+        background: #fff;
+      }
+    }
+  }
+
+  .ant-tabs-tabpane {
+    padding: 15px;
+    background: #fff;
+  }
+}
+
+// 表格
+.ant-table-wrapper {
+
+  // 表格内的操作button
+  .table-action {
+    display: inline-block;
+    padding: 4px 14px;
+    background: #E4F1FB;
+    opacity: 1;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+    color: #1CC2FD;
+    margin-left: 6px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  }
+
+  .ant-table-thead>tr>th {
+    background: #F6F9FB;
+    border-bottom: 1px solid #E5EBF3;
+  }
+
+  .ant-table-tbody>tr>td {
+    border-bottom: 1px solid #E5EBF3; //#e8e8e8
+  }
+
+  // [a-table]表格g右侧固定列的阴影
+  .ant-table-fixed-right {
+    box-shadow: 0px 3px 5px rgba(77, 92, 111, 0.1);
+    -webkit-box-shadow: 0px 3px 5px rgba(77, 92, 111, 0.1);
+  }
+}
+
+
+// [a-card]卡片样式
+.ant-card {
+  border-radius: 6px;
+
+  .ant-card-head {
+    padding: 0 15px;
+  }
+
+  .ant-card-body {
+    padding: 15px;
+  }
+}
+
+.ant-modal-title {
+  font-weight: bolder;
+}
+
+.ant-select-selection__placeholder {
+  color: #d0dfeb;
+}
+
+.ant-menu-dark .ant-menu-item-selected .anticon+span {
+  color: @primary-color
+}
